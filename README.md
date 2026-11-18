@@ -37,8 +37,7 @@ An AI-assisted Bhagavad Gita exploration project combining emotion classificatio
     ├── evaluate_model.py
     ├── test_retrieval.py
     ├── models/
-    │   ├── gita_faiss.index
-    │   └── gita_metadata.pkl
+    │   └── gita_faiss.index
     ├── requirements.txt
     └── .gitignore
 
@@ -55,7 +54,7 @@ Use Python 3.10 or newer. Create and activate a virtual environment, then instal
     source .venv/bin/activate
     pip install -r requirements.txt
 
-The source code expects a trained emotion model at models/distilbert-emotion/. That trained model directory and the source CSV datasets were not present in the original repository tree inspected for this copy. They must be obtained from the project team or regenerated before running the complete training/inference workflow.
+The source code expects a trained emotion model at models/distilbert-emotion/ and metadata at models/gita_metadata.pkl. The trained model directory was not present in the original repository tree, and the metadata pickle could not be transferred into this copy. Obtain both from the project team (after confirming permission) or regenerate them before running the complete inference workflow. The FAISS index is included at models/gita_faiss.index.
 
 Expected dataset inputs for the data-preparation scripts are under data/, including data/bhagavad_gita.csv. These datasets are not included in this repository snapshot.
 
@@ -110,7 +109,7 @@ The original repository did not declare a license at the time it was inspected. 
 
 ## Current limitations
 
-- The trained DistilBERT checkpoint and input datasets are not included in the inspected source repository.
-- Reproducible inference requires the trained checkpoint and matching model configuration/labels.
+- The trained DistilBERT checkpoint and input datasets are not included in this repository copy.
+- Reproducible inference also requires models/gita_metadata.pkl, the trained checkpoint, and matching model configuration/labels.
 - The API and pipeline should be integration-tested after the missing assets and dependencies are supplied.
 - No deployment configuration or frontend source was present in the inspected repository snapshot.
