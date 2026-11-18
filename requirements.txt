@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+pandas
+scikit-learn
+torch
+transformers
+datasets
+sentence-transformers
+faiss-cpu
