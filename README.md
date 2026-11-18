@@ -2,7 +2,6 @@
 
 An AI-assisted Bhagavad Gita exploration project combining emotion classification with semantic verse retrieval. A user describes a concern; the backend predicts an emotion and retrieves relevant Bhagavad Gita verses using Sentence-BERT embeddings and a FAISS similarity index.
 
-> **Group-project attribution:** This is an independently maintained portfolio copy of the group project originally published at [ShreyVyas123/Shlokasense1](https://github.com/ShreyVyas123/Shlokasense1). The original project and its contributors are acknowledged. This repository does not claim sole authorship of the original work. Please add the full group-member list and individual contribution details after confirming them with the team.
 
 ## What is in this repository
 
